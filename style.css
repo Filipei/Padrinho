@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: -webkit-linear-gradient(90deg, #000000,#7503a6,#000000);background: linear-gradient(90deg, #000000,#7503a6,#000000);
+}
+.container{
+    margin-top: 40px;
+    width: 700px;
+    height:300px;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2;
+    border-radius: 20px;
+    color: #d1c1f0;
+}
+h1{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+.buttons{
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width:100px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#imagem{
+    filter: drop-shadow(6px 6px 40px white);
+    animation: pulse 1.5s infinite;
+    border-radius: 50%;
+
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
+.popupclass{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: -webkit-linear-gradient(90deg, #6c39ba,#a87efb);background: linear-gradient(90deg, #6c39ba,#a87efb);
+    color: #d1c1f0;
+}
+#simbutton{
+    background: -webkit-linear-gradient(90deg, #e5d2ed,#fee0ff);background: linear-gradient(90deg, #e5d2ed,#fee0ff);
+    color: #7503a6;
+}
+#simbutton:hover{
+    color: white;
+    background: -webkit-linear-gradient(90deg, #6f36bc,#36174d);background: linear-gradient(90deg, #6f36bc,#36174d);
+    transition: 0.8s;
+    scale: 1.1;
+    filter: drop-shadow(2px 2px 20px white);
+}
+#naobutton{
+    background: -webkit-linear-gradient(90deg, #e5d2ed,#fee0ff);background: linear-gradient(90deg, #e5d2ed,#fee0ff);
+    color: #7503a6;
+}
+.confirmclass{
+    height: 40px;
+    background-color: #a87efb;
+}
+.confirmclass:hover{
+    transition: 0.8s;
+    scale: 1.1;
+}
